@@ -1,75 +1,101 @@
-# React + TypeScript + Vite
+# 🎬 CrimsonPlay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface frontend do CrimsonPlay, uma aplicação web para consulta e exploração de filmes e séries, desenvolvida com React e TypeScript.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologias
 
-## React Compiler
+* React
+* TypeScript
+* Vite
+* React Router
+* API REST
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Estrutura
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O projeto utiliza uma organização baseada em componentes e páginas:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```text
+src/
+  components/
+    Footer.tsx
+    Navbar.tsx
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  modules/
+    movies/
+      pages/
+        Movies.tsx
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+    series/
+      pages/
+        Series.tsx
 
+  routes/
+    AppRoutes.tsx
+
+  App.tsx
+  main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+A pasta `components` contém componentes reutilizáveis da interface:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **Navbar**: barra de navegação da aplicação.
+* **Footer**: rodapé da aplicação.
 
-```
+### Modules
+
+A pasta `modules` contém os módulos principais da aplicação:
+
+* **Movies**: listagem e exploração de filmes.
+* **Series**: listagem e exploração de séries.
+
+### Routes
+
+A pasta `routes` concentra a configuração de rotas da aplicação utilizando React Router.
+
+---
+
+## 🔗 Rotas
+
+### Movies
+
+* `/movies` — listagem de filmes.
+
+### Series
+
+* `/series` — listagem de séries.
+
+A rota `/` redireciona para `/movies`.
+
+---
+
+## 🔗 API
+
+O frontend consome a API REST do CrimsonPlay, desenvolvida para atuar como uma camada intermediária entre a aplicação e a API do TMDB.
+
+A API do CrimsonPlay é responsável por consumir os dados fornecidos pelo TMDB, processá-los e padronizá-los antes de disponibilizá-los para o frontend.
+
+---
+
+## 📌 Créditos e uso da TMDB
+
+Este produto utiliza a API do TMDB, mas não é endossado ou certificado pela TMDB.
+
+Os dados e imagens utilizados neste projeto são fornecidos pela The Movie Database (TMDB).
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e portfólio.
+
+---
+
+## 👩‍💻 Autora
+
+Sthefany Souza

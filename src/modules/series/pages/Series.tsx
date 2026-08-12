@@ -1,14 +1,14 @@
-import { Navbar } from "../../../components/Navbar";
-import { Footer } from "../../../components/Footer";
+import { Link } from "react-router-dom";
 
-export function Series() {
+function Series() {
 
   return (
     <div>
-      <Navbar />
       <h1>CrimsonPlay</h1>
       <h4>Page Series Test</h4>
-      <Footer />
+      <Link to="/series/456">
+         Testar detalhes
+      </Link>
     </div>
   );
 }

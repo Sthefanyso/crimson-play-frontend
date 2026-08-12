@@ -1,4 +1,4 @@
-export function Footer() {
+function Footer() {
   return (
     <footer>
       <div>

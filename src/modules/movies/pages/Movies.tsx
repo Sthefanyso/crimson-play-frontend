@@ -1,13 +1,14 @@
-import { Navbar } from "../../../components/Navbar";
-import { Footer } from "../../../components/Footer";
+import { Link } from "react-router-dom";
 
-export function Movies() {
+function Movies() {
 
   return (
     <div>
-      <Navbar />
       <h1>CrimsonPlay</h1>
-      <Footer />
+
+        <Link to="/movies/123">
+          Testar detalhes
+        </Link>
     </div>
   );
 }

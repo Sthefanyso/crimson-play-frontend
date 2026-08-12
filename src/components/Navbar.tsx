@@ -1,4 +1,4 @@
-export function Navbar() {
+function Navbar() {
   return (
     <nav>
       <span>Logo</span>

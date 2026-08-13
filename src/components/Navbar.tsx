@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav>
       <span>Logo</span>
       <div>
-        <a href="/movies">Filmes</a>
-        <a href="/series">Séries</a>
+        <NavLink to="/movies">Filmes</NavLink>
+        <NavLink to="/series">Séries</NavLink>
       </div>
 
       <div>

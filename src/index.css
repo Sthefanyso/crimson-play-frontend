@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
+
+  /* colors */
   --color-primary-700: #991f1f;
   --color-primary-600: #b22222;
   --color-primary-500: #bf3030;
@@ -17,6 +20,70 @@
   --color-neutral-200: #a3a3a3;
   --color-neutral-100: #e5e5e5;
   --color-neutral-0: #ffffff;
+
+  /* typography */
+  --font-family-sans: "Inter", sans-serif;
+
+  --text-display: 3rem;
+  --text-display--line-height: 3.625rem;
+  --text-display--font-weight: 700;
+
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 3rem;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 2.25rem;
+  --text-h2--line-height: 2.75rem;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 2rem;
+  --text-h3--line-height: 2.5rem;
+  --text-h3--font-weight: 500;
+
+  --text-h4: 1.5rem;
+  --text-h4--line-height: 2rem;
+  --text-h4--font-weight: 500;
+
+  --text-section-title: 1.25rem;
+  --text-section-title--line-height: 1.75rem;
+  --text-section-title--font-weight: 700;
+
+  --text-card-title: 1.25rem;
+  --text-card-title--line-height: 1.75rem;
+  --text-card-title--font-weight: 500;
+
+  --text-body-primary: 1rem;
+  --text-body-primary--line-height: 1.5rem;
+  --text-body-primary--font-weight: 400;
+
+  --text-body-primary-bold: 1rem;
+  --text-body-primary-bold--line-height: 1.5rem;
+  --text-body-primary-bold--font-weight: 700;
+
+  --text-body-secondary: 0.875rem;
+  --text-body-secondary--line-height: 1.25rem;
+  --text-body-secondary--font-weight: 400;
+
+  --text-body-secondary-bold: 0.875rem;
+  --text-body-secondary-bold--line-height: 1.25rem;
+  --text-body-secondary-bold--font-weight: 700;
+
+  --text-body-tertiary: 0.625rem;
+  --text-body-tertiary--line-height: 0.875rem;
+  --text-body-tertiary--font-weight: 400;
+
+  --text-button-primary: 1rem;
+  --text-button-primary--line-height: 1.5rem;
+  --text-button-primary--font-weight: 600;
+
+  --text-button-secondary: 1rem;
+  --text-button-secondary--line-height: 1.5rem;
+  --text-button-secondary--font-weight: 500;
+
+  --text-button-tertiary: 0.875rem;
+  --text-button-tertiary--line-height: 1.25rem;
+  --text-button-tertiary--font-weight: 500;
+
 }
 
 * {

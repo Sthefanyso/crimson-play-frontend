@@ -26,12 +26,19 @@ src/
 
   modules/
     movies/
+      mediaTabs/
+        Cast.tsx
+        Media.tsx
+        Seasons.tsx
+        TechnicalSheet.tsx
       pages/
         Movies.tsx
+        MoviesDetails.tsx
 
     series/
       pages/
         Series.tsx
+        SeriesDetails.tsx
 
   routes/
     AppRoutes.tsx

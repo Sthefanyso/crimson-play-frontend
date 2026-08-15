@@ -4,6 +4,8 @@
 @theme {
 
   /* colors */
+  --color-background: #050505;
+
   --color-primary-700: #991f1f;
   --color-primary-600: #b22222;
   --color-primary-500: #bf3030;
